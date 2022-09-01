@@ -16,7 +16,7 @@ const fetchPrice = async(ctype) =>{
     showPrice(r.data.coin);
 }
 
-
+document.body.style.backgroundImage = "url('crypto.jpg')";
 const showPrice = (coinData)=>{
     const price = coinData.price;
     const vol = coinData.volume;
