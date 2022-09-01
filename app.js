@@ -11,7 +11,6 @@ form.addEventListener('submit',(e)=>{
 
 });
 
-document.body.style.backgroundImage = "url('crypto.jpg')";
 const fetchPrice = async(ctype) =>{
     const r = await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}?currency=USD`);
     showPrice(r.data.coin);
